@@ -1,4 +1,19 @@
-<script setup>
+<script>
+import { useHead } from '@unhead/vue'
+
+export default {
+  setup(){
+    useHead({
+      title: 'Rikku Blog',
+      meta: [
+        {
+          name: 'description',
+          content: '歡迎來到我的部落格~~',
+        },
+      ],
+    })
+  }
+}
 
 </script>
 

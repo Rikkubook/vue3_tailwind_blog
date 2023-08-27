@@ -1,5 +1,22 @@
-<script setup>
+<script>
+import { useHead } from '@unhead/vue'
 
+export default {
+  setup(){
+    useHead({
+      title: '我的的文章',
+      meta: [
+        {
+          name: 'description',
+          content: '歡迎來到我的的文章~~',
+        },
+        {property:"og:title",content:"我的的文章"},
+        {property:"og:description",content:"Garlic bread with cheese: What the science tells us"},
+        {property:"og:image",content:"https://fakeimg.pl/440x320/282828/eae0d0/?retina=1"}
+      ],
+    })
+  }
+}
 </script>
 
 <template>
@@ -19,7 +36,7 @@
     </header>
     <article class="container px-4 py-12">
       <div class="text-center mb-10">
-        <h1 class="text-5xl font-medium tracking-wide">我的的文張</h1>
+        <h1 class="text-5xl font-medium tracking-wide">我的的文章</h1>
         <div class="mt-4 text-gray-400 tracking-wider">2023/01/01</div>
       </div>
       <!-- 可以自己改 prose 樣式 -->
