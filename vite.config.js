@@ -28,7 +28,7 @@ export default defineConfig({
         IconsResolver(
           {
             prefix: false,  // 移除 IHeroiconsOutlineHome 的前贅詞
-            enabledCollections: ['heroicons-outline'] // 只引入 heroicons-outline
+            enabledCollections: ['heroicons-outline','ri'] // 只引入 heroicons-outline
           }
         )
       ],
