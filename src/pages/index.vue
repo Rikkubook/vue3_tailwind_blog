@@ -25,18 +25,18 @@
       <ul class="space-y-10 sm:space-y-16">
         <li class="sm:flex" v-for="i in 4">
           <!-- aspect-[4/3] -->
-          <RouterLink to="/">
+          <RouterLink to="/posts/my-blog">
             <img class="sm:w-[300px] aspect-video object-cover rounded-lg" src="https://fakeimg.pl/440x320/282828/eae0d0/?retina=1" alt="">
           </RouterLink>
           <div class=" mt-4 sm:mt-0 sm:ml-6">
             <h4 class="text-2xl font-bold tracking-wide mb-2">
-              <RouterLink to="/" class="text-gray-800 hover:text-violet-600">
+              <RouterLink to="/posts/my-blog" class="text-gray-800 hover:text-violet-600">
                 我的文章
               </RouterLink>
             </h4>
-            <div class="text-gray-400 text-sm tracking-wider mb-3">2021/01/01</div>
+            <div class="text-gray-400 text-sm tracking-wider mb-3">2023/01/01</div>
             <p class="text-gray-500 mb-4">Lorem ipsum dolor sit.</p>
-            <RouterLink to="/" class="flex items-center text-violet-500 hover:text-violet-400 tracking-wider">
+            <RouterLink to="/posts/my-blog" class="flex items-center text-violet-500 hover:text-violet-400 tracking-wider">
               更多 <heroicons-outline:chevron-right class="w-4 h-4 ml-1"/>
             </RouterLink>
           </div>
